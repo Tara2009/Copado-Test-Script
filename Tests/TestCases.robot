@@ -17,11 +17,11 @@ Entering a Contacts
     UseModal                          On
     TypeText                          Phone                    +917398867459
     Picklist                          Salutation               Sr.
-    TypeText                          First Name               tara srinivas11
+    TypeText                          First Name               tara srinivas12
     TypeText                          Last Name                chandika
     ComboBox                          Search Accounts...       tara siri account7
     TypeText                          Email                    tvsh@gmail.com
-    TypeText                          Title                    project11
+    TypeText                          Title                    project12
     TypeText                          Mailing Street           hanuman nagar 4th line
     TypeText                          Mailing City             guntur
     TypeText                          Mailing State/Province   ap
@@ -59,7 +59,7 @@ Entering A Account
     ClickUntil                New Account                  New
     UseModal                  On
     TypeText                  Phone                        +7207207174
-    TypeText                  Name                         tara siri account12
+    TypeText                  Name                         tara siri account13
     TypeText                  Website                      www.tvsh.com
     VerifyText                Additional Information
     PickList                  Type                         Analista
@@ -81,7 +81,7 @@ Entering A Account
     UseModal                  Off
 
     ClickText                 Details
-    VerifyText                tara siri account12
+    VerifyText                tara siri account13
     VerifyText                +7207207174
     VerifyText                www.tvsh.com
 
@@ -96,8 +96,8 @@ Entering A Lead
     VerifyText                Lead Information
     UseModal                  On                          # Only find fields from open modal dialog
     Picklist                  Salutation                  Sr.
-    TypeText                  First Name                  Please19
-    TypeText                  Last Name                   Help19
+    TypeText                  First Name                  Please20
+    TypeText                  Last Name                   Help20
     Picklist                  Lead Status                 New
     # generate random phone number, just as an example
     # NOTE: initialization of random number generator is done on suite setup
@@ -116,7 +116,7 @@ Entering A Lead
     Sleep                     1
     
     ClickText                 Details
-    VerifyField               Name                        Sr. Please19 Help19
+    VerifyField               Name                        Sr. Please20 Help20
     VerifyField               Lead Status                 New
     VerifyField               Phone                       ${phone}
     VerifyField               Company                     Growmore
@@ -127,7 +127,7 @@ Entering A Lead
     Should Match Regexp	      ${phone_num}	              ^[+]\\d{14}$
     
     ClickText                 Leads
-    VerifyText                Please19 Help19
+    VerifyText                Please20 Help20
     VerifyText                Manager
     VerifyText                Growmore   
     
@@ -136,18 +136,18 @@ Converting Lead To Opportunity
     [tags]                    Lead
     ClickText                 Leads
     VerifyText                Change Owner
-    ClickText                 Please4 Help4                    
+    ClickText                 Please1 Help1                    
     ClickUntil                Convert Lead                       convert
     UseModal                  On
     ClickText                 Opportunity                         2
-    TypeText                  Opportunity Name                   convert lead Please4 Help4 to opportunity
+    TypeText                  Opportunity Name                   convert lead Please1 Help1 to opportunity
     ClickText                 Convert                            2
     VerifyText                Your lead has been converted       timeout=30
     UseModal                  Off
     UseModal                  On
     ClickText                 Go to Leads
     UseModal                  Off
-    TypeText                  Search this list...                Please4\n
+    TypeText                  Search this list...                please1 help1\n
     ClickText                 Opportunities
-    ClickText                 convert lead Please4 Help4 to opportunity
+    ClickText                 convert lead Please1 Help1 to opportunity
 
