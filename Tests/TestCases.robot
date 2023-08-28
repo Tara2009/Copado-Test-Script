@@ -17,7 +17,7 @@ Entering a Contacts
     UseModal                          On
     TypeText                          Phone                    +917396637458
     Picklist                          Salutation               Sr.
-    TypeText                          First Name               tara srinivas13
+    TypeText                          First Name               Vinuthna
     TypeText                          Last Name                chandika
     ComboBox                          Search Accounts...       tara siri account7
     TypeText                          Email                    tvsh@gmail.com
