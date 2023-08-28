@@ -15,13 +15,13 @@ Entering a Contacts
     ClickText                         Contacts
     ClickUntil                        New Contact              New
     UseModal                          On
-    TypeText                          Phone                    +917398867459
+    TypeText                          Phone                    +917396637458
     Picklist                          Salutation               Sr.
-    TypeText                          First Name               tara srinivas12
+    TypeText                          First Name               tara srinivas13
     TypeText                          Last Name                chandika
     ComboBox                          Search Accounts...       tara siri account7
     TypeText                          Email                    tvsh@gmail.com
-    TypeText                          Title                    project12
+    TypeText                          Title                    project13
     TypeText                          Mailing Street           hanuman nagar 4th line
     TypeText                          Mailing City             guntur
     TypeText                          Mailing State/Province   ap
@@ -32,7 +32,7 @@ Entering a Contacts
     TypeText                          Other State/Province     ap
     TypeText                          Other Zip/Postal Code    52206
     TypeText                          Other Country            india
-    TypeText                          Fax                      7398878560
+    TypeText                          Fax                      7396637458
     PickList                          Lead Source              Publicidad
     TypeText                          Home Phone               8987
     ClickText                         Birthdate                anchor=Home Phone
@@ -58,8 +58,8 @@ Entering A Account
     ClickText                 Accounts
     ClickUntil                New Account                  New
     UseModal                  On
-    TypeText                  Phone                        +7207207174
-    TypeText                  Name                         tara siri account13
+    TypeText                  Phone                        +7207207177
+    TypeText                  Name                         tara siri account14
     TypeText                  Website                      www.tvsh.com
     VerifyText                Additional Information
     PickList                  Type                         Analista
@@ -82,7 +82,7 @@ Entering A Account
 
     ClickText                 Details
     VerifyText                tara siri account13
-    VerifyText                +7207207174
+    VerifyText                +7207207177
     VerifyText                www.tvsh.com
 
     # End Account creation test case
@@ -96,8 +96,8 @@ Entering A Lead
     VerifyText                Lead Information
     UseModal                  On                          # Only find fields from open modal dialog
     Picklist                  Salutation                  Sr.
-    TypeText                  First Name                  Please20
-    TypeText                  Last Name                   Help20
+    TypeText                  First Name                  Please21
+    TypeText                  Last Name                   Help21
     Picklist                  Lead Status                 New
     # generate random phone number, just as an example
     # NOTE: initialization of random number generator is done on suite setup
@@ -116,7 +116,7 @@ Entering A Lead
     Sleep                     1
     
     ClickText                 Details
-    VerifyField               Name                        Sr. Please20 Help20
+    VerifyField               Name                        Sr. Please21 Help21
     VerifyField               Lead Status                 New
     VerifyField               Phone                       ${phone}
     VerifyField               Company                     Growmore
@@ -127,7 +127,7 @@ Entering A Lead
     Should Match Regexp	      ${phone_num}	              ^[+]\\d{14}$
     
     ClickText                 Leads
-    VerifyText                Please20 Help20
+    VerifyText                Please21 Help21
     VerifyText                Manager
     VerifyText                Growmore   
     
